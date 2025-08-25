@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>도서 등록</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 40px; 
+            background-color: #f9f9f9;
+        }
+        h1 { 
+            text-align: center; 
+            color: #333; 
+        }
+        form { 
+            width: 400px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label { 
+            display: inline-block; 
+            width: 100px; 
+            font-weight: bold; 
+        }
+        input { 
+            width: 250px; 
+            padding: 5px; 
+            margin-bottom: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+        }
+        button { 
+            width: 100%; 
+            padding: 10px; 
+            background-color: #4CAF50; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            font-size: 16px; 
+            cursor: pointer; 
+        }
+        button:hover { 
+            background-color: #45a049; 
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 30px; 
+        }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 8px; 
+            text-align: center; 
+        }
+        th { 
+            background-color: #f2f2f2; 
+            font-weight: bold; 
+        }
+        tr:hover { 
+            background-color: #f5f5f5; 
+        }
+    </style>
+</head>
+<body>
+    <h1>도서 등록</h1>
+    <form>
+        <label for="title">제목:</label>
+        <input type="text" id="title" name="title"><br>
+
+        <label for="author">저자:</label>
+        <input type="text" id="author" name="author"><br>
+
+        <label for="isbn">ISBN:</label>
+        <input type="text" id="isbn" name="isbn"><br>
+
+        <label for="price">가격:</label>
+        <input type="text" id="price" name="price"><br>
+
+        <label for="publishDate">출판일:</label>
+        <input type="date" id="publishDate" name="publishDate"><br>
+
+        <button type="submit">등록</button>
+    </form>
+
+    <h2>등록된 도서 목록</h2>
+    <table>
+        <tr>
+            <th>제목</th>
+            <th>저자</th>
+            <th>ISBN</th>
+            <th>가격</th>
+            <th>출판일</th>
+        </tr>
+        <tr>
+            <td>예시 책</td>
+            <td>홍길동</td>
+            <td>1234567890</td>
+            <td>15000</td>
+            <td>2025-08-25</td>
+        </tr>
+    </table>
+</body>
+</html>
