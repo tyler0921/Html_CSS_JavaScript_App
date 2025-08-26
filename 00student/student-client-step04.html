@@ -75,9 +75,32 @@
                     <th>액션</th>
                 </tr>
             </thead>
-            <tbody></tbody>
+            <tbody id="studentTableBody"></tbody>
         </table>
     </div>
+
+    <script type="text/javascript">
+      //전역변수
+      const API_BASE_URL = "http://localhost:8080";
+
+      //DOM 엘리먼트 가져오기
+      const studentForm = document.getElementById("studentForm");
+      const studentTableBody = document.getElementById("studentTableBody");
+
+      //Document Load 이벤트 처리하기
+      document.addEventListener("DOMContentLoaded", function() {
+          loadStudents();
+      });
+      //StudentForm 의 Submit 이벤트 처리하기
+      studentForm.addEventListener("submit", function(event){
+        console.log("Form 이 체출 되었음....")
+      });
+
+      //Student(학생) 목록을 Load 하는 함수
+      function loadStudents() {
+          console.log("학생 목록 Load 중.....");
+      }
+    </script>
 </body>
 
 </html>
